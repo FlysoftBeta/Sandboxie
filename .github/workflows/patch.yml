@@ -1,0 +1,26 @@
+name: Patch CI
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [master]
+
+jobs:
+  build-x64:
+    runs-on: windows-2019
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: microsoft/setup-msbuild@v2
+      - shell: cmd
+        run: |
+          curl -L -f --url https://jrsoftware.org/download.php/is.exe?site=1 -o is.exe
+          is /verysilent /norestart /dir="%cd%/IS"
+          echo "%cd%/IS" >> $GITHUB_PATH
+      - shell: cmd
+        run: BuildPath.cmd
+      - uses: actions/upload-artifact@v4
+        with:
+          name: x64
+          path: Sandboxie/Bin/x64/SbieRelease/*

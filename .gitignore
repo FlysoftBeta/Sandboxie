@@ -10,6 +10,9 @@ MsgSbieRelease
 Sandboxie/msgs/Text-English-1033.txt
 *.mc
 
+bin
+obj
+
 # User-specific files
 *.rsuser
 *.suo

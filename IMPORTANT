@@ -1,0 +1,19 @@
+This is a patch which aims to make Sandboxie freely available,
+by patching the GPL-3 licensed Sandboxie core driver
+and load it through a kernel-mode driver exploit.
+
+As it uses an exploit to work, it might
+DESTROY YOUR COMPUTER AND EVEN LEAVE YOU IN SECURITY RISKS.
+By clicking Next, you accept the security risks it will bring.
+
+The patch might be wrongly flagged as malware during installation,
+make sure to turn off anti-virus softwares before install.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
