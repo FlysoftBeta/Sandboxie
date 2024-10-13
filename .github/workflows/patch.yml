@@ -19,7 +19,7 @@ jobs:
           is /verysilent /norestart /dir="%cd%/IS"
           echo "%cd%/IS" >> $GITHUB_PATH
       - shell: cmd
-        run: BuildPath.cmd
+        run: BuildPatch.cmd
       - uses: actions/upload-artifact@v4
         with:
           name: x64
