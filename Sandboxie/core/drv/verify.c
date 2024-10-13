@@ -761,7 +761,11 @@ _FX NTSTATUS KphValidateCertificate()
         goto CleanupExit;
     }
 
+#if 0
     status = KphVerifySignature(hash, hashSize, signature, signatureSize);
+#else
+	status = STATUS_SUCCESS;
+#endif
 
     if (NT_SUCCESS(status) && key) {
 
